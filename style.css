@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "roboto";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: justify;
+    
+    
+
+}
+.linea{
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    display: block;   
+}
+.container{
+ max-width: 1400px;
+ margin-left: auto;
+ height: 100%;
+ 
+ 
+
+}
+header{
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    
+}
+
+header .logo {
+    margin: 0;
+    padding: 20px 30px;
+    display: flex;
+}
+header .container{
+    flex-direction: column;
+    display: contents;
+    margin: 0;
+
+}
+
+
+header nav{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 12px;
+}
+header a{
+    text-decoration: none;
+    padding: 5px 12px;
+    font-weight: bold;
+    color: white;
+    
+}
+header a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+
+}
+ nav{
+     height: 100%;
+    
+ }
+   
+ .img-container{
+    background-image: url("img/libreria.jpeg");  
+     background-size: cover;
+     background-attachment: contain;
+     height: 650px;
+     width: 123%;
+    text-align: justify;
+   
+     }
+    
+ }

@@ -106,9 +106,10 @@ header a:hover{
 }
 #home h1{
     color: white;
+    
 }
 
-#home h4{
+#home p{
     color: white;
     font-size: .96rem;
     line-height: 1.3em;

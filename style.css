@@ -86,7 +86,7 @@ header a:hover{
     text-decoration: underline;
 }
 
-#hero{
+#home{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,11 +104,11 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
-#hero h1{
+#home h1{
     color: white;
 }
 
-#hero h4{
+#home h4{
     color: white;
     font-size: .96rem;
     line-height: 1.3em;

@@ -86,6 +86,17 @@ header a:hover{
     color: gray;
     text-decoration: underline;
 }
+ .boton input {
+    background-color: rgb(186, 169, 201);
+    border-radius: 6px;
+    padding: 6px 15px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    color: white;
+ }
+ .boton input:hover{
+   background-color: rgb(237, 82, 108);
+ }
 
 #home{
     display: flex;

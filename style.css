@@ -43,7 +43,7 @@ header .logo {
 
 }
 .logo img{
-    height: 50px;
+    height: 60px;
     align-items: center;
     margin-right: 10px;
 
@@ -70,6 +70,7 @@ header nav{
     padding-right: 10px;
     margin: 0 10px 10px 0;
     align-items: center;
+    float: right;
 }
 header a{
     text-decoration: none;

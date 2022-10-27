@@ -11,67 +11,64 @@
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-<header>
-
-    <div class="container">
-        <div class="logo">
-        <a href="index.html"><img src="img/logo.png"></a>
-    </div>
-        <nav>
-            <a href=""><button>home</button></a>
-            <a href="#novedades">novedades</a>
-            <a href="#categoria">categoria</a>
-            <a href="https://librerianacional.com/">libreria nacional</a>
-            <a href="#contacto">contacto</a>
-            <a href="#cotizar libros">cotizar libros</a>
-        </nav>
-          <div class="social-links">
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i>
-                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
-                <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i>
-        </div> 
-           
- 
-
-
-    
-    </div>
-    </div>
-</header>
+</head>
+<body>
+    <!-- encabezado global -->
+   <div class="home-wrapper">
+       <!-- etiqueta de encabezado interno -->
+       <header>
+           <div class="container">
+               <!-- logo con enlace a la pagina principal index-->
+               <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+               <!-- menu de navegación con etiqueta nav -->
+               <nav>
+                   <!-- enlaces ancla de menú -->
+                   <a href="index.html#home"><button>Home</button></a>
+                   <a href="index.html">novedades</a>
+                   <a href="#categoria">categoría</a>
+                   <a href="#contacto">contacto</a>
+                   <a href="cotizar.html">cotizar</a>
+                   <!-- enlances externos -->
+                   <a href="https://librerianacional.com/" target="_blank" rel="noopener noreferrer">Librería Nacional</a>
+                   <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href="https://wa.me/3105188168" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+               </nav>
+           </div>
+       </header>
 
    <section class="container" id="home">
     <h1>BOOKSEM, es la mejor opcion!!</h1>
-    <a href="https://blog.hubspot.es/website/frontend-y-backend"><button>Solicita tu libro ahora!!</button></a>
+    <a href="https://librerianacional.com/"><button>Solicita tu libro ahora!!</button></a>
     <p>libros actualizados en diferentes categorias, aprende,desarrolla y aplica los conocimientos en tu vida cotidiana</p>
    
     </section>
+    </div>
     <section class="container" id="novedades">
         <h2>Novedades</h2>
         <div class="box">
-             <img src="img/ui.png" alt="" width="10%">
+             <img src="img/ui.png" alt="" width="70%">
              <h3>UX/UI</h3>
              <P>El término UX viene de User Experience, o Experiencia del Usuario. Básicamente es cómo una persona se siente mientras usa cualquier producto o 
                 servicio digital que tu empresa ofrece. UX tiene que ver también con la sensación de esta persona después de usar tu producto.
                 Eso incluye su experiencia con tu sitio web y blog, el sistema online o la aplicación, incluso, si tu negocio no es 100% digital también aplica.
-                La expresión UI viene de User Interface, que significa Interfaz del Usuario. 
-                La idea del UI es guiar al usuario por tu aplicación durante el tiempo que él la usa. Utilizaremos el mismo ejemplo que acabamos de ver para facilitar la explicación.
-                En el momento que una persona entra en tu sitio web, existen algunas acciones específicas que deseas que ellas tomen.
-                Entonces, un buen trabajo de diseño UI te permitirá guiar a los usuarios por la navegación y los llevará a tomar dichas acciones de manera natural.
+                
+                
             </P>
         </div>
 
         <div class="box">
-            <img src="img/software.png" alt="" width="10%">
+            <img src="img/software.png" alt="" width="70%">
             <h3>Web Desing</h3>
             <P>El design gráfico es un área de conocimiento que se encarga de crear piezas gráficas, virtuales o no, y organizar elementos visuales para comunicar un mensaje. 
                Esto incluye folletos, carteles, vallas publicitarias, libros y revistas, entre otros.
                Los elementos relacionados con el branding de una marca, como el logotipo y la identidad visual, también son responsabilidad del diseñador gráfico.
-               Y con la llegada de Internet, llegó el concepto del web design. Este comprende la creación de piezas y elementos visuales centrados en el entorno web</P>
+               </P>
        </div>
 
        <div class="box">
-        <img src="img/programming.png" alt="" width="10%">
+        <img src="img/programming.png" alt="" width="70%">
         <h3>desarrollador fron-end</h3>
         <P>Los Desarrolladores Web diseñan, crean y realizan mantenimiento a páginas y aplicaciones web, en tal sentido, 
            trabajan en sitios de internet y de intranet. Por lo general, son empleados por empresas especializadas en el 
@@ -83,49 +80,43 @@
     <section class="container" id="categoria">
         <h2>Categoria</h2>
         <div class="box">
-             <img src="img/literaco.jpeg" alt="" width="50%" height="350px">
+             <img src="img/literaco.jpeg" alt="" width="100%" height="350px">
              <h3>Literatura Colombiana</h3>
              <P>
                 La literatura de Colombia se refiere al conjunto de producciones literarias creadas en Colombia, desde
-                la época del Nuevo Reino de Granada hasta los tiempos actuales, a lo que se añade la literatura oral de 
-                los indígenas, recopilada primero por los cronistas de Indias, y luego por investigadores y antropólogos 
-                que hasta la actualidad siguen recogiendo ese tipo de relatos, junto con literatura oral de origen campesino 
-                y folclórico.
+                la época del Nuevo Reino de Granada hasta los tiempos actuales
             </P>
         </div>
 
         <div class="box">
-            <img src="img/cuento.jpeg" alt="" width="50%">
+            <img src="img/cuento.jpeg" alt="" width="100%" height="350">
             <h3>Cuentos</h3>
             <P>
                 Un cuento es una narración breve creada por uno o varios autores, puede ser basada ya sea en hechos 
-                reales como ficticios, cuya trama es protagonizada por un grupo reducido de personajes y con un argumento
-                relativamente sencillo.
+                reales como ficticios, cuya trama es protagonizada por un grupo reducido de personajes.
             </P>
        </div>
 
        <div class="box">
-        <img src="img/terror.jpeg" alt="" width="50%" height="350px">
+        <img src="img/terror.jpeg" alt="" width="100%" height="350px">
         <h3>Literatura Terror</h3>
         <P>La literatura de terror es un género de ficción literario que pretende o tiene la capacidad de asustar, 
             causar miedo o aterrorizar sus lectores o espectadores en inducir sentimientos de horror y terror. 
-            El historiador literario J. A. Cuddon ha definido la historia de terror como «una ficción en prosa de 
-            longitud variable
+            El historiador literario J. A. 
         </P>
    </div>
    
    <div class="box">
-        <img src="img/ficcion.png" alt="" width="50%">
+        <img src="img/ficcion.png" alt="" width="100%" height="350px">
         <h3>Literatura Ficcion</h3>
         <P>Se denomina ficción a la simulación de la realidad que realizan las obras como literarias, cinematográficas, 
             historietísticas, de animación u de otro tipo, cuando presentan un mundo imaginario al receptor. Estos mundos
-             tienen sus propios personajes y reglas de verosimilitud, con un grado variable de realismo, sea porque toman 
-             algunos elementos de referencia de la realidad, sea porque la contradicen o transforman.
+             tienen sus propios personajes y reglas de verosimilitud.
         </P>
    </div>
 
    <div class="box">
-        <img src="img/romance.jpeg" alt="" width="50%">
+        <img src="img/romance.jpeg" alt="" width="100%" height="350px">
         <h3>Literatura Romance</h3>
         <P>Un romance puede ser definido como un poema narrativo, formado por una sola secuencia poética no dividida en estrofas, 
             y compuesto por versos de ocho sílabas (octosílabos) con rima asonante regular en los versos pares.
@@ -153,8 +144,8 @@
         </div>
 
         <div class="boton">
-            <input type="submit" value="Enviar" class="">
-            <input type="reset" value="Borrar" class="">
+            <button type="submit" class="">Enviar</button>
+            <button type="reset" class="">Borrar</button>
         </div>
     </form>
 </section>
@@ -162,7 +153,8 @@
 <!-- mapa -->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.74073834541!2d-75.65125209709198!3d6.
 24419882131964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedel
-l%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1666665481186!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+l%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1666665481186!5m2!1ses!2sco" width="100%" height="450" style="border:0;" 
+allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <!-- footer o pie de pag -->
 <footer class="cover">
@@ -170,7 +162,6 @@ l%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1666665481186!5m2!1ses!2sco" width="
 </footer>
 
 
-<body> 
     
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

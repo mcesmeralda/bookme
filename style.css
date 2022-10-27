@@ -1,95 +1,164 @@
+
+:root{
+    /* fuentes */
+    --titulos:'Lato', sans-serif;
+    --parrafos:'Roboto',sans-serif;
+    /* colores corporativos */
+    --encabezado:#3c0e03;
+    --piepagina:#000;
+    --enlace:#fff;
+    --enlaceSobre:#f3922b;
+
+}
+
+/* configuración global */
+h1,h2,h3,h4,h5,h6 {
+    font-family:var(--titulos);
+    
+}
+
+/* selector universal en css es (*) */
 *{
+    /* calcular mejor los paddings o espaciados */
     box-sizing: border-box;
 }
-body{
-    font-family: "roboto";
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-}
-.linea{
-    background-color: black;
-    height: 5px;
+
+/* representación de una clase en css es (.) */
+/* Encabezado */
+.home-wrapper {
+    background-image: url('img/libreee.jpeg');
+    background-size: cover;
     width: 100%;
-    display: block;   
-}
-.container{
- max-width: 1400px;
- margin-left: auto;
- height: 100%;
- 
- 
-
-}
-header{
-    background-color:rgb(186, 169, 201);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    height: 100px;
-    justify-content: center;
-    
-}
-
-header .logo {
-    margin: 0;
-    padding: 25px 30px;
-    display: flex;
-
-}
-.logo{
-    display: flex;
-
-}
-.logo img{
-    height: 60px;
-    align-items: center;
-    margin-right: 10px;
-
-    
-  
-}
-header .container{
-    display: flex;
-    flex-direction: column;
-    display: contents;
-    margin: 0;
-    align-items: center;
+    height: 100%;
    
-
 }
 
+header{
+    width: 100%;
+    background-color:  rgb(186, 169, 201);
+    position: fixed;
+    padding-top: 8px;
+}
 
 header nav{
-    flex-direction: column;
-    display: flex;
-    text-align: center;
-    padding-bottom: 60px;
-    margin: 12px;
-    padding-right: 10px;
-    margin: 0 10px 10px 0;
-    align-items: center;
     float: right;
+    margin-left: 5px;
+    padding: 10px 2px;
 }
-header a{
+
+header img{
+    width: 200px;
+}
+
+header nav a{
+    color: var(--enlace);
     text-decoration: none;
-    padding: 5px 12px;
+    margin-left: 8px;
     font-weight: bold;
-    color: white;
-    margin: 0 20px 20px 0;
+}
+
+header nav a:hover{
+    color: rgb(237, 82, 108);
+}
+
+/* sección home */
+#home{
     text-align: center;
-    
-    
+    padding: 250px 0 450px;
 }
-header a:hover{
-    color: gray;
-    text-decoration: underline;
+
+#home h1{
+    font-size:3.0rem;
+    margin-bottom: 30px;
+    color: #000;
 }
+
+#home p{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+section{
+    padding-top: 80px;
+}
+
+section h2{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* sección novedades */
+#novedades .box{
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+}
+
+#novedades .box p{
+    text-align: justify;
+}
+
+#novedades .box img{
+    padding-left: 30%;
+    padding-bottom: 10px;
+}
+
+#novedades .box h3{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* seccion categoría */
+#categoria .box{
+    display: inline-block;
+    width: 33%;
+}
+#categoria .box img{
+    width: 100%;
+}
+
+#categoria .box h3{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#categoria .box p{
+    text-align: justify;
+}
+
+/* sección contacto */
+#contacto{
+    background-image: url('/img/mapas.webp');
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    
+
+}
+
+#contacto h2{
+    color: #fff;
+}
+
+#contacto textarea,input{
+    width: 500px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgb(67, 10, 10);
+
+}
+
+
  .boton input {
     background-color: rgb(186, 169, 201);
     border-radius: 6px;
-    padding: 6px 15px;
+    padding: 6px 5px;
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     color: white;
@@ -98,35 +167,6 @@ header a:hover{
    background-color: rgb(237, 82, 108);
  }
 
-#home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/libreria.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-#home h1{
-    color: white;
-    
-}
-
-#home p{
-    color: white;
-    font-size: .96rem;
-    line-height: 1.3em;
-    font-family: "roboto",sans-serif;
-}
 button{
     font-size: 1.20em;
     font-weight: bold;
@@ -135,7 +175,7 @@ button{
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: pink;
+    background-color: rgb(150, 103, 191);
     align-items: center;
 }
 button:hover{
@@ -161,30 +201,27 @@ button:hover{
     background-color: palevioletred;
     color: gray;
 }
-@media (min-width: 720px){
-    header{
-        position: fixed;
-        width: 100%;
-        
-    }
-    header .container{
-    flex-direction: row;
-    justify-content: space-between;
    
-    
-}
-
-header nav{
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
-    
-
-}
- nav{
-     height: 100%;
-    
-     
+ #contacto textarea,input{
+    width: 400px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #fff;
+    background-color: pink;
+    font-size: 1rem;
  }
  
- }
+iframe{
+    margin: 15px 0 10px;
+
+}
+
+footer{
+    width: 100%;
+    background-color: var(--piepagina);
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
